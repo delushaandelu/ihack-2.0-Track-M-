@@ -54,7 +54,7 @@
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Manage User</span></a>
                         <ul>
-                            <li><a href="addadmin.php"><span class="fa fa-heart"></span> Add a Admin</a></li>                            
+                            <li><a href="addadmin.php"><span class="fa fa-heart"></span> Add an Admin</a></li>                            
                             <li><a href="viewadmin.php"><span class="fa fa-cogs"></span> View Admins</a></li>
                             <li><a href="viewuser.php"><span class="fa fa-square-o"></span> View Users</a></li>                            
                             <li><a href="removeuser.php"><span class="fa fa-pencil-square-o"></span> Remove Users</a></li>

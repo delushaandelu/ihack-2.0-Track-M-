@@ -6,6 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/addbus.css" type="text/css">
         
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- END META SECTION -->
@@ -22,24 +23,44 @@
                 include ("config/header.php")
             ?>
             
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Manage User</h2>
                 </div>
                 <!-- END PAGE TITLE -->                
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                
-                    
-                    
-                   
-                   
-
+                <form method="post" onSubmit="return check();">
+                <table border="0" class="table">
+                   <tr>
+                        <td colspan="2"><center><b>Add an Admin</b></center></td>
+                    </tr>
+                    <tr>
+                        <td width="20%">Full Name</td>
+                        <td ><input type="text" name="pnum" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="rnum" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" name="root" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td><input type="text" name="dept" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Contect</td>
+                        <td><input type="text" name="track" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><button action="classaddbus.php" type="submit" id="submit" class="btn btn-primary"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Add an Admin</button><center></td>
+                    </tr>
+                </table>
+            </form>  
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            
