@@ -26,38 +26,38 @@
                     </li>
                     <li class="xn-title">Navigation</li>                    
                     <li>
-                        <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                        <a href="home.php"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
                     </li>
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Manage Bus</span></a>
                         <ul>
-                            <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Add Bus</a></li>
-                            <li><a href="pages-profile.html"><span class="fa fa-user"></span> Delete Bus</a></li>
-                            <li><a href="pages-address-book.html"><span class="fa fa-users"></span> View Bus in Map</a></li><li><a href="pages-address-book.html"><span class="fa fa-users"></span> View All Bus</a></li>                           
+                            <li><a href="addbus.php"><span class="fa fa-image"></span> Add Bus</a></li>
+                            <li><a href="deletebus.php"><span class="fa fa-user"></span> Delete Bus</a></li>
+                            <li><a href="C:/xampp/htdocs/ihack-2.0-Track-M-/web/maps.html"><span class="fa fa-users"></span> View Bus in Map</a></li><li><a href="viewall.php"><span class="fa fa-users"></span> View All Bus</a></li>                           
                         </ul>
                     </li>
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">Manage Root</span></a>
                         <ul>
-                            <li><a href="layout-boxed.html">Add Root</a></li>
-                            <li><a href="layout-nav-toggled.html">View Roots</a></li>
-                            <li><a href="layout-nav-top.html">Edit and Delete root</a></li>
+                            <li><a href="addroot.php">Add Root</a></li>
+                            <li><a href="viewroot.php">View Roots</a></li>
+                            <li><a href="deleteroot.php">Edit and Delete root</a></li>
                         </ul>
                     </li>     
                      <li class="xn-openable">
                         <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Complains</span></a>
                         <ul>
-                            <li><a href="ui-widgets.html"><span class="fa fa-heart"></span> View Complains</a></li>                            
-                            <li><a href="ui-elements.html"><span class="fa fa-cogs"></span> Delete Complains</a></li>
+                            <li><a href="viewcomp.php"><span class="fa fa-heart"></span> View Complains</a></li>                            
+                            <li><a href="delcomp.php"><span class="fa fa-cogs"></span> Delete Complains</a></li>
                         </ul>
                     </li>             
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">Manage User</span></a>
                         <ul>
-                            <li><a href="ui-widgets.html"><span class="fa fa-heart"></span> Add a Admin</a></li>                            
-                            <li><a href="ui-elements.html"><span class="fa fa-cogs"></span> View Admins</a></li>
-                            <li><a href="ui-buttons.html"><span class="fa fa-square-o"></span> View Users</a></li>                            
-                            <li><a href="ui-panels.html"><span class="fa fa-pencil-square-o"></span> Remove Users</a></li>
+                            <li><a href="addadmin.php"><span class="fa fa-heart"></span> Add a Admin</a></li>                            
+                            <li><a href="viewadmin.php"><span class="fa fa-cogs"></span> View Admins</a></li>
+                            <li><a href="viewuser.php"><span class="fa fa-square-o"></span> View Users</a></li>                            
+                            <li><a href="removeuser.php"><span class="fa fa-pencil-square-o"></span> Remove Users</a></li>
                         </ul>
                     </li>                    
                 </ul>
