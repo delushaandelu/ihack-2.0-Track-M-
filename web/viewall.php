@@ -64,7 +64,7 @@
 
                     $conn->close();
 
-        ?>
+                ?>
 
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->

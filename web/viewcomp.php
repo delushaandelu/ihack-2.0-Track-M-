@@ -21,25 +21,44 @@
             <?php
                 include ("config/header.php")
             ?>
-            
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Complains</h2>
                 </div>
                 <!-- END PAGE TITLE -->                
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                
-                    
-                    
-                   
-                   
+                <?php
 
+                    include('config/database.php');
+
+                    $sql = "SELECT * FROM comp";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        echo "<table class='table' id='myTable' >";
+                        echo"<tr class='success'>
+                            <th><center>ID</center></th>
+                            <th><center>Bus Number </center></th>
+                            <th><center>Complains </center></th>
+                        </tr>";
+
+                        while($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                <td><h5 align='center'> " . $row["id"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["busnum"]. "</h5></td>
+                                <td><h5 align='left'>" . $row["message"]. "</h5></td>
+                            </tr>";
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "0 results";
+                    }
+
+                    $conn->close();
+
+                ?>
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            
