@@ -21,25 +21,52 @@
             <?php
                 include ("config/header.php")
             ?>
-            
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Manage User</h2>
                 </div>
                 <!-- END PAGE TITLE -->                
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                
-                    
-                    
-                   
-                   
+                <?php
 
+                    include('config/database.php');
+
+                    $sql = "SELECT * FROM user";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        echo "<table class='table' id='myTable' >";
+                        echo"<tr class='success'>
+                            <th><center>ID</center></th>
+                            <th><center>Full Name </center></th>
+                            <th><center>Email </center></th>
+                            <th><center>Location </center></th>
+                            <th><center>Username </center></th>
+                            <th><center>Mobile No </center></th>
+                            <th><center>Action </center></th>
+                        </tr>";
+
+                        while($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                <td><h5 align='center'> " . $row["id"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["name"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["email"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["location"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["username"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["mobile"]. "</h5></td>
+                                <td><center><Button type='submit' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></button></center></td>
+                            </tr>";
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "0 results";
+                    }
+
+                    $conn->close();
+
+                ?>
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            
