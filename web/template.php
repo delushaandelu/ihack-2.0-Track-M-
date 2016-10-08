@@ -2,7 +2,7 @@
 <html lang="en">
     <head>        
         <!-- META SECTION -->
-        <title>Joli Admin - Responsive Bootstrap Admin Template</title>            
+        <title>SL-Transport Board</title>            
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,11 +21,6 @@
             <?php
                 include ("config/header.php")
             ?>
-            
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
                     <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
@@ -35,11 +30,7 @@
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
                 
-                    
-                    
                    
-                   
-
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            
