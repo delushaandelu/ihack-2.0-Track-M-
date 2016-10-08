@@ -34,12 +34,45 @@
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                
-                    
-                    
-                   
-                   
+                <?php
 
+                    include('config/database.php');
+
+                    $sql = "SELECT * FROM buses";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        echo "<table class='table' id='myTable' >";
+                        echo"<tr class='success'>
+                            <th><center>ID</center></th>
+                            <th><center>Bus Permit Number </center></th>
+                            <th><center>Bus Root </center></th>
+                            <th><center>Department </center></th>
+                            <th><center>Tracking Method </center></th>
+                            <th><center>MAC / IMEI </center></th>
+                            <th><center>Action </center></th>
+                        </tr>";
+
+                        while($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                <td><h5 align='center'> " . $row["id"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["pnum"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["rnum"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["dept"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["track"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["mac"]. "</h5></td>
+                                <td><center><Button type='submit' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></button></center></td>
+
+                            </tr>";
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "0 results";
+                    }
+
+                    $conn->close();
+
+        ?>
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            

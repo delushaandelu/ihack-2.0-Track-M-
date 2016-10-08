@@ -31,37 +31,37 @@
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">           
-                <form method="post">
+                <form method="post" onSubmit="return check();">
                 <table border="0" class="table">
                    <tr>
                         <td colspan="2"><center><b>Add Bus</b></center></td>
                     </tr>
                     <tr>
                         <td width="20%">Bus Permit Number</td>
-                        <td ><input type="text" name="num" class="form-control"></td>
+                        <td ><input type="text" name="pnum" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Bus Root Number</td>
-                        <td><input type="text" name="num" class="form-control"></td>
+                        <td><input type="text" name="rnum" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Bus Root</td>
-                        <td><input type="text" name="num" class="form-control"></td>
+                        <td><input type="text" name="root" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Department</td>
-                        <td><input type="text" name="num" class="form-control"></td>
+                        <td><input type="text" name="dept" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Tracking Method</td>
-                        <td><input type="text" name="num" class="form-control"></td>
+                        <td><input type="text" name="track" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>MAC / IMEI Number</td>
-                        <td><input type="text" name="num" class="form-control"></td>
+                        <td><input type="text" name="mac" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><center><button type="submit" id="submit" class="btn btn-primary"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Add</button><center></td>
+                        <td colspan="2"><center><button action="classaddbus.php" type="submit" id="submit" class="btn btn-primary"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Add</button><center></td>
                     </tr>
                 </table>
             </form>  

@@ -33,7 +33,7 @@
                         <ul>
                             <li><a href="addbus.php"><span class="fa fa-image"></span> Add Bus</a></li>
                             <li><a href="deletebus.php"><span class="fa fa-user"></span> Delete Bus</a></li>
-                            <li><a href="C:/xampp/htdocs/ihack-2.0-Track-M-/web/maps.html"><span class="fa fa-users"></span> View Bus in Map</a></li><li><a href="viewall.php"><span class="fa fa-users"></span> View All Bus</a></li>                           
+                            <li><a href="maps.html"><span class="fa fa-users"></span> View Bus in Map</a></li><li><a href="viewall.php"><span class="fa fa-users"></span> View All Bus</a></li>                           
                         </ul>
                     </li>
                     <li class="xn-openable">
