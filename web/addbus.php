@@ -61,7 +61,7 @@
                         <td><input type="text" name="mac" class="form-control"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><center><button action="classaddbus.php" type="submit" id="submit" class="btn btn-primary"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Add</button><center></td>
+                        <td colspan="2"><center><button action="classaddbus.php" type="submit" id="submit" class="btn btn-primary"> <i class="fa fa-location-arrow" aria-hidden="true"></i>Add Bus</button><center></td>
                     </tr>
                 </table>
             </form>  

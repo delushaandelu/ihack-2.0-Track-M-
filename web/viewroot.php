@@ -21,25 +21,53 @@
             <?php
                 include ("config/header.php")
             ?>
-            
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Manage Root</h2>
                 </div>
                 <!-- END PAGE TITLE -->                
                 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
-                
-                    
-                    
-                   
-                   
+                 <?php
 
+                    include('config/database.php');
+
+                    $sql = "SELECT * FROM root";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        echo "<table class='table' id='myTable' >";
+                        echo"<tr class='success'>
+                            <th><center>ID</center></th>
+                            <th><center>Root Number </center></th>
+                            <th><center>Starting Point </center></th>
+                            <th><center>Endding Point </center></th>
+                            <th><center>Distance </center></th>
+                            <th><center>Cost/Passanger </center></th>
+                            <th><center>Road </center></th>
+                        </tr>";
+
+                        while($row = $result->fetch_assoc()) {
+                            echo "<tr>
+                                <td><h5 align='center'> " . $row["id"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["rootn"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["start"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["end"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["distance"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["cost"]. "</h5></td>
+                                <td><h5 align='center'>" . $row["road"]. "</h5></td>
+
+                            </tr>";
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "0 results";
+                    }
+
+                    $conn->close();
+
+                ?>
                 </div>         
                 <!-- END PAGE CONTENT WRAPPER -->
             </div>            

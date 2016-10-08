@@ -21,14 +21,9 @@
             <?php
                 include ("config/header.php")
             ?>
-            
-                              
-                
-               
-                
                 <!-- PAGE TITLE -->
                 <div class="page-title">                    
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Template</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Manage Bus</h2>
                 </div>
                 <!-- END PAGE TITLE -->                
                 
