@@ -24,7 +24,7 @@
                             </div>
                         </div>                                                                        
                     </li>
-                    <li class="xn-title">Navigation</li>                    
+                    <li class="xn-title">Functions</li>                    
                     <li>
                         <a href="home.php"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
                     </li>
